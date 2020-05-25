@@ -1,39 +1,51 @@
-
-<h1>Eat-Da-Burger!</h1>
-
-<h2>Burgers that are not Devoured!</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#unless devoured}}
-    {{> burgers/burger-block devoured=true}}
-    {{/unless}}
-    {{/each}}
-</ul>
-
-<h2>Burgers that are Devoured!</h2>
-
-<ul>
-    {{#each burgers}}
-    {{#if devoured}}
-    {{> burgers/burger-block devoured=false}}
-    {{/if}}
-    {{/each}}
-</ul>
-
-<h2>Add a Burger</h2>
-<form class="create-form">
+<div style="width:100%;height:0;padding-bottom:75%;position:relative;"><iframe src="https://giphy.com/embed/xT3i1hD9m6PbAoftMA" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/spongebob-spongebob-squarepants-season-6-xT3i1hD9m6PbAoftMA">via GIPHY</a></p>
+<br>
+<h2>Order Here!</h2>
+<form class="create-form form">
 
     <div class="form-group">
         <label for="burg">Burger Name:</label>
         <input type="text" id="burg" name="name">
     </div>
+    <br>
 
     <div class="form-group">
-        <label for="dev">Devoured?</label><br>
-        <input type="radio" name="devoured" value="1" checked> Devoured!<br>
-        <input type="radio" name="devoured" value="0"> Available
+        
+        <input type="radio" name="devoured" value="0" checked> Ready to Eat!<br>
+        <input type="radio" name="devoured" value="1"> Devoured!
     </div>
+    <br>
 
-    <button type="submit">Add Burger</button>
+    <button class="submitButton" type="submit">Add Burger</button>
 </form>
+
+<br>
+
+<div class="row">
+    <div class="column">
+        <h2>Burgers Ready to Eat!</h2>
+
+        <ul class="devouredList">
+            {{#each burgers}}
+            {{#unless devoured}}
+            {{> burgers/burger-block devoured=true}}
+            {{/unless}}
+            {{/each}}
+        </ul>
+    </div>
+    <div class="column">
+        <h2>Devoured Burgers!</h2>
+
+        <ul class="notDevouredList">
+            {{#each burgers}}
+            {{#if devoured}}
+            {{> burgers/burger-block devoured=false}}
+            {{/if}}
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+<br>
+
+<div style="width:100%;height:0;padding-bottom:76%;position:relative;"><iframe src="https://giphy.com/embed/6jnKmSpBoJLaw" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/spongebob-squarepants-krabby-patty-6jnKmSpBoJLaw">via GIPHY</a></p>

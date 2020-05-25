@@ -1,2 +1,51 @@
-# Burgers
+<p><a href="https://lbesson.mit-license.org/"><img src="https://img.shields.io/badge/License-MIT-blue.svg" alt="MIT license"></a></p>
+
+# Burgers!
+
+<h1>Description</h1>
+
 A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!)
+<h1>Table of Contents</h1>
+
+<ul>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#usage">Usage</a></li>
+<li><a href="#contributing">Contributing</a></li>
+</ul>
+
+<h1>Installation</h1>
+
+<h2>Clone or Download</h2>
+<ul>
+<li>Clone or download this repo to your local machine</li>
+</ul>
+<h2>Setup</h2>
+<ul>
+  <li>Create a Database using the pre made schema & seed files in the db folder</li>
+  <li>Fill out connection information for the sql database located in the config directory then connection.js file</li>
+  <li>In your terminal locate into the root directory or the project folder Burgers.</li>
+  <li>Use this command to download packages:<code>npm i</code></li>
+</ul>
+<h2>Run it!<h2>
+<ul>
+<li>Run the application by entering <code>npm start</code></li>
+</ul>
+
+<h1>Usage</h1>
+
+![Gif](http://g.recordit.co/Uczg9k01Za.gif)
+
+<h1>Contributing</h1>
+
+<p><strong>Instructions</strong></p>
+<ul>
+<li>
+<p>Fork or Clone repo to your local machine</p>
+</li>
+<li>
+<p>HACK AWAY!</p>
+</li>
+<li>
+<p>Create a new pull request</p>
+</li>
+</ul>

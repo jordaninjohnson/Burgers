@@ -9,7 +9,6 @@ A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!)
 
 <ul>
 <li><a href="#installation">Installation</a></li>
-<li><a href="#usage">Usage</a></li>
 <li><a href="#contributing">Contributing</a></li>
 </ul>
 
@@ -30,10 +29,6 @@ A burger logger with MySQL, Node, Express, Handlebars and a homemade ORM (yum!)
 <ul>
 <li>Run the application by entering <code>npm start</code></li>
 </ul>
-
-<h1>Usage</h1>
-
-![Gif](http://g.recordit.co/Uczg9k01Za.gif)
 
 <h1>Contributing</h1>
 
